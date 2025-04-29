@@ -5,6 +5,19 @@ import '../services/item_service.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  IconData getIcon(String title) {
+    title = title.toLowerCase();
+    if (title.contains('laptop')) {
+      return Icons.laptop_mac;
+    } else if (title.contains('smartphone')) {
+      return Icons.smartphone;
+    } else if (title.contains('headphone')) {
+      return Icons.headphones;
+    } else {
+      return Icons.category; // default
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,12 +48,21 @@ class HomePage extends StatelessWidget {
                 final item = items[index];
                 return Card(
                   child: ListTile(
-                    leading: CircleAvatar(
-                      radius: 26,
-                      backgroundColor: Colors.deepPurple,
-                      child: Text(
-                        item.id.toString(),
-                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    leading: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: const LinearGradient(
+                          colors: [Colors.deepPurple, Colors.purpleAccent],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                      ),
+                      child: Icon(
+                        getIcon(item.title),
+                        color: Colors.white,
+                        size: 28,
                       ),
                     ),
                     title: Text(
