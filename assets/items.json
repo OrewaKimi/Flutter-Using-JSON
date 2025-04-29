@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Laptop",
+      "description": "Laptop gaming dengan spesifikasi tinggi."
+    },
+    {
+      "id": 2,
+      "title": "Smartphone",
+      "description": "Smartphone flagship dengan kamera terbaik."
+    },
+    {
+      "id": 3,
+      "title": "Headphone",
+      "description": "Headphone wireless dengan noise cancellation."
+    },
+    {
+      "id": 4,
+      "title": "Smartwatch",
+      "description": "Smartwatch dengan fitur kesehatan lengkap."
+    },
+    {
+      "id": 5,
+      "title": "Tablet",
+      "description": "Tablet dengan layar besar dan baterai tahan lama."
+    },
+    {
+      "id": 6,
+      "title": "Camera",
+      "description": "Kamera mirrorless dengan lensa berkualitas tinggi."
+    },
+    {
+      "id": 7,
+      "title": "Drone",
+      "description": "Drone dengan kamera 4K dan fitur otomatis."
+    },
+    {
+      "id": 8,
+      "title": "Smart TV",
+      "description": "Smart TV dengan resolusi 4K dan aplikasi streaming."
+    },
+    {
+      "id": 9,
+      "title": "Game Console",
+      "description": "Game console terbaru dengan banyak game eksklusif."
+    },
+    {
+      "id": 10,
+      "title": "E-reader",
+      "description": "E-reader dengan layar anti silau dan penyimpanan besar."
+    }
+  ]
+  
